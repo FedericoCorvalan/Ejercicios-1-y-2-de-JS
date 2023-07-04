@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const nombre = prompt('Ingrese su nombre:', '')
+        const distancia = prompt('Ingrese la distancia a recorrer en metros:', '')
+
+        console.log(`Hola ${nombre} la distancia que vas a recorrer es de ${distancia} metros.`)
+        document.write(`Hola ${nombre} la distancia que vas a recorrer es de ${distancia} metros.`)
+
+        // console.log('Hola ' + nombre + ' la distancia que vas a recorrer es de ' + distancia + ' metros.')
+        // document.write('Hola ' + nombre + ' la distancia que vas a recorrer es de ' + distancia + ' metros.')
+
+        if(distancia <= 1000){
+            document.write('Se recomienda caminar a pie')
+        } else if (distancia <= 10000){
+            document.write('Se recomienda viajar en bicicleta')
+        } else if (distancia <= 30000) {
+            document.write('Se recomienta viajar en colectivo')
+        } else if (distancia <= 100000){
+            document.write('Se recomienda viajar en auto')
+        } else if (distancia > 100000){
+            document.write('Se recomienda viajar en avion')
+        }
+    </script>
+</body>
+</html>
